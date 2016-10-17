@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CAFF70), to(#836FFF));
+}
+.navbar{
+    border-radius:0;
+}
+.navbar-brand{
+    padding-left: 60px !important;
+}
+.navbar-form{
+    margin-right: 60px;
+}
+
+.jumbotron{
+    margin-top: -20px;
+    padding-left:200px ;
+    padding-right: 200px;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#836FFF), to(#CAFF70));
+}
+.tabshow{
+    /*margin-top: -30px;*/
+    height: 350px;
+    background-color: lightgray;
+}
+table{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+label.btn-danger{
+    margin-left: 20px;
+}
+p.tabp{
+    color: slategrey;
+    margin-left: 50px;
+    display: inline-block;
+}
