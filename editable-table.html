@@ -5,6 +5,15 @@
     <title></title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="editable-table.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("[data-toggle='popover']").popover(
+                    trigger='click'
+            )
+        })
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -135,14 +144,5 @@
         <button class="btn btn-info btn-lg"><a href="https://zhihu.com/people/huang-lei1994" target="_blank">知乎</a></button>
     </div>
 </div>
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script>
-    $(function(){
-        $("[data-toggle='popover']").popover(
-                trigger='click'
-        )
-    })
-</script>
 </body>
 </html>
