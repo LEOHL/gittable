@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CAFF70), to(#836FFF));
+    /*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CAFF70), to(#836FFF));*/
 }
 .navbar{
     border-radius:0;
@@ -31,11 +31,38 @@ table{
 label.btn-danger{
     margin-left: 20px;
 }
+.btn-info a{
+    color: white;
+    text-decoration: none;
+}
 p.tabp{
     color: slategrey;
     margin-left: 50px;
     display: inline-block;
 }
+table,tr,td,th {
+
+    border:1px solid #A3A3A3;
+    border-collapse:collapse;
+    /*background-color:#E4E4E4;*/
+}
+th{
+    text-align:center;
+}
+td,th {
+    width:200px;
+    height:30px;
+    text-align:center;
+}
 .footer{
     margin: 50px 30%;
+}
+pre.prettyprint{
+    height: auto;
+    padding: 0;
+    line-height: 20px;
+    white-space: pre-wrap;
+}
+#prebig span{
+    margin-left: -140px;
 }
