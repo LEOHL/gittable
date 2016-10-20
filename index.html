@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="index.css">
+    <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+    <script src="jquery-3.1.0.js"></script>
+     <script src="table.js"></script>
+     <script>
+       
+        $(function(){
+           
+            $(".td").editableTd();
+        })
+//      function download(){
+//          console.log("download....");
+//      }
+//      function back(){
+//          console.log("back...");
+//      }
+//      function refresh(){
+//          console.log("refresh...");
+//      }
+    </script>
+</head>
+<body>
+	
+<nav class="navbar navbar-inverse navbar-fixed-top">
+             <span class="navbar-brand">
+                Editable-table
+            </span>
+</nav>
+
+<div class="jumbotron">
+    <h1>Editable-table</h1>
+    <p>This is a component for table,'aditable-table'can edit your table and calculate sum.It is a perfect table component,you can use it do anything you want! </p>
+    <a href="#" class="btn btn-info btn-lg" disabled>Please read  (=&Lambda;&omega;&Lambda;=)</a>
+</div>
+
+<div class="container">
+    <div class="tabshow">
+        <table class="tab" id="mainTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Profit</th>
+                    <th>Fun</th>
+                </tr>
+            </thead>
+            <tbody id="tb_calculation">
+                <tr>
+                    <td class="td" >Car</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
+                </tr>
+                <tr>
+                    <td class="td" >Bike</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
+                </tr>
+                <tr>
+                    <td class="td " >Plane</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num">1</td>
+                </tr>
+                <tr>
+                    <td class="td " >Yacht</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
+                </tr>
+                <tr>
+                    <td class="td ">Segway</td>
+                    <td class="td td_num">300</td>
+                    <td class="td td_num">240</td>
+                    <td class="td td_num">1</td>
+                </tr>
+            </tbody>
+            <tfoot id="tb_sum">
+                <tr>
+                    <th>TOTAL</th>
+                    <th class="tb_alone">1290</th>
+                    <th class="tb_alone">1420</th>
+                    <th class="tb_alone">5</th>
+                </tr>
+            </tfoot>
+        </table>
+        <label class="btn btn-sm btn-danger">Easy usage</label>
+        <p class="tabp">Just start typing to edit, or move around with arrow keys or mouse clicks!</p>
+    </div>
+    <nav class="navbar navbar-default navbar-static">
+        <ul class="nav navbar-nav">
+            <li><a href="#fat">About</a></li>
+            <li><a href="#mdo">Usage</a></li>
+            <li><a href="#one">principle</a></li>
+            <li><a href="#two">answers for your questions</a></li>
+        </ul>
+    </nav>
+    <!--插件使用介绍及问题start-->
+    <div  data-spy="scroll" data-target=".navbar" data-offset="0"
+          style="height: 400px;overflow: auto;position: relative;border:1px solid #ccc;margin-top: -20px;" >
+        <h4 id="fat">About</h4>
+        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        <h4 id="mdo">Usage</h4>
+        <pre class="prettyprint  prettyprinted">$(#table).editableTableWidget();</pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <pre class="prettyprint  prettyprinted">$(#table).editableTableWidget();</pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <pre class="prettyprint  prettyprinted">$(#table).editableTableWidget();</pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <pre class="prettyprint  prettyprinted">$(#table).editableTableWidget();</pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <pre class="prettyprint  prettyprinted">$(#table).editableTableWidget();</pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <pre id="prebig" class="prettyprint  prettyprinted">
+                    <span>$(#table).editableTableWidget();</span>
+                    <span>$(#table).editableTableWidget();</span>
+                    <span>$(#table).editableTableWidget();</span>
+                    <span>$(#table).editableTableWidget();</span>
+                    <span>$(#table).editableTableWidget();</span>
+        </pre>
+        <p>Use a text area instead of input field to input (or supply a custom editor element)</p>
+        <h4 id="one">principle</h4>
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        <h4 id="two">answers for your questions</h4>
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+    </div>
+    <!--介绍end-->
+    <!--github仓库-->
+    <div class="footer">
+        <a class="btn btn-primary btn-lg" href="#" role="button">View project on Github</a>
+        <button class="btn btn-default btn-lg glyphicon glyphicon-thumbs-up" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="+1!!!" ></button>
+        <button class="btn btn-default btn-sm"><a href="http://weibo.com/huanglei1994" target="_blank"><img src="image/wb.png"></a></button>
+        <button class="btn btn-info btn-lg"><a href="https://zhihu.com/people/huang-lei1994" target="_blank">知乎</a></button>
+    </div>
+</div>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("[data-toggle='popover']").popover(
+                trigger='click'
+        )
+    })
+</script>
+</body>
+</html>
