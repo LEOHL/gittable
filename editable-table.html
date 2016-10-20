@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="editable-table.css">
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script>
+    <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+    <script src="jquery-3.1.0.js"></script>
+     <script src="table.js"></script>
+     <script>
+       
         $(function(){
-            $("[data-toggle='popover']").popover(
-                    trigger='click'
-            )
+           
+            $(".td").editableTd();
         })
+//      function download(){
+//          console.log("download....");
+//      }
+//      function back(){
+//          console.log("back...");
+//      }
+//      function refresh(){
+//          console.log("refresh...");
+//      }
     </script>
 </head>
 <body>
+	
 <nav class="navbar navbar-inverse navbar-fixed-top">
              <span class="navbar-brand">
                 Editable-table
@@ -30,7 +42,7 @@
 
 <div class="container">
     <div class="tabshow">
-        <table class="table table-striped" id="mainTable">
+        <table class="" id="mainTable">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -39,44 +51,44 @@
                     <th>Fun</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tb_calculation">
                 <tr>
-                    <td tabindex="1">Car</td>
-                    <td tabindex="1">300</td>
-                    <td tabindex="1">240</td>
-                    <td tabindex="1">1</td>
+                    <td class="td" >Car</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
                 </tr>
                 <tr>
-                    <td tabindex="1">Bike</td>
-                    <td tabindex="1">300</td>
-                    <td tabindex="1">240</td>
-                    <td tabindex="1">1</td>
+                    <td class="td" >Bike</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
                 </tr>
                 <tr>
-                    <td tabindex="1">Plane</td>
-                    <td tabindex="1">300</td>
-                    <td tabindex="1">240</td>
-                    <td tabindex="1">1</td>
+                    <td class="td " >Plane</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num">1</td>
                 </tr>
                 <tr>
-                    <td tabindex="1">Yacht</td>
-                    <td tabindex="1">300</td>
-                    <td tabindex="1">240</td>
-                    <td tabindex="1">1</td>
+                    <td class="td " >Yacht</td>
+                    <td class="td td_num" >300</td>
+                    <td class="td td_num" >240</td>
+                    <td class="td td_num" >1</td>
                 </tr>
                 <tr>
-                    <td tabindex="1">Segway</td>
-                    <td tabindex="1">300</td>
-                    <td tabindex="1">240</td>
-                    <td tabindex="1">1</td>
+                    <td class="td ">Segway</td>
+                    <td class="td td_num">300</td>
+                    <td class="td td_num">240</td>
+                    <td class="td td_num">1</td>
                 </tr>
             </tbody>
-            <tfoot>
+            <tfoot id="tb_sum">
                 <tr>
                     <th>TOTAL</th>
-                    <th>1290</th>
-                    <th>1420</th>
-                    <th>5</th>
+                    <th class="tb_alone">1290</th>
+                    <th class="tb_alone">1420</th>
+                    <th class="tb_alone">5</th>
                 </tr>
             </tfoot>
         </table>
@@ -138,11 +150,19 @@
     <!--github仓库-->
     <div class="footer">
         <a class="btn btn-primary btn-lg" href="#" role="button">View project on Github</a>
-        <!--<button class="btn btn-default btn-lg glyphicon glyphicon-envelope" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="还在建设中。。。。" ></button>-->
         <button class="btn btn-default btn-lg glyphicon glyphicon-thumbs-up" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="+1!!!" ></button>
         <button class="btn btn-default btn-sm"><a href="http://weibo.com/huanglei1994" target="_blank"><img src="image/wb.png"></a></button>
         <button class="btn btn-info btn-lg"><a href="https://zhihu.com/people/huang-lei1994" target="_blank">知乎</a></button>
     </div>
 </div>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("[data-toggle='popover']").popover(
+                trigger='click'
+        )
+    })
+</script>
 </body>
 </html>
