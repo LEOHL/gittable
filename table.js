@@ -1,9 +1,11 @@
-;(function($){
++(function(){
+	'use strict';
     $.fn.editableTd= function(){
     	
 		$(this).click(function(){
-    		//单击td  
-    		var  nub = 0, w_nub= 0, sum= 0;
+    		 
+    	var  nub = 0, w_nub= 0, sum= 0;//计算变量
+    		//单击td 
         var tdObj = $(this); 
         var text = tdObj.html();
         //保存原来的文本  
@@ -18,7 +20,7 @@
            alert(inputVal);  
         });
        //获取当前按键的键值
-		 inputObj.keyup(function(e){
+		 inputObj.keydown(function(e){
 		
 		//jQuery的event对象上有一个which的属性可以获得键盘按键的键值
 			var keycode = e.which;
@@ -37,7 +39,9 @@
 	//		up
 			if(keycode == 38){
 	
-				$(this).parent().parent().prev().children().click();
+				var num=$("#tb_calculation tr td").index($(this).parent());
+				
+				$("#tb_calculation tr td").eq(num-4).click();
 			}
 	//		right
 			if(keycode == 39){
@@ -46,8 +50,10 @@
 			}
 	//		down
 			if(keycode == 40){
-				var num=$(this).index();
-				$(this).parent().parent().next().children().eq(num).click();
+//				alert("1");
+				var num=$("#tb_calculation tr td").index($(this).parent());
+				
+				$("#tb_calculation tr td").eq(num+4).click();
 			}
 			if(keycode == 27){
 			//将td中的内容还原成text
