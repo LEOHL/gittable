@@ -1,6 +1,6 @@
 +(function(){
 	'use strict';
-    $.fn.editableTd= function(){
+    $.fn.editableTd= function(n){
     	
 		$(this).click(function(){
     		 
@@ -41,7 +41,7 @@
 	
 				var num=$("#tb_calculation tr td").index($(this).parent());
 				
-				$("#tb_calculation tr td").eq(num-4).click();
+				$("#tb_calculation tr td").eq(num-n).click();
 			}
 	//		right
 			if(keycode == 39){
@@ -53,7 +53,7 @@
 //				alert("1");
 				var num=$("#tb_calculation tr td").index($(this).parent());
 				
-				$("#tb_calculation tr td").eq(num+4).click();
+				$("#tb_calculation tr td").eq(num+n).click();
 			}
 			if(keycode == 27){
 			//将td中的内容还原成text
